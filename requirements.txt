@@ -1,0 +1,6 @@
+requests
+PyPDF2
+beautifulsoup4
+elasticsearch
+spacy
+scikit-learn
