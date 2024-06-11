@@ -136,19 +136,32 @@ Please follow the steps in installation to create and run the Elasticsearch dock
 
 <br />
  
- ### Usage
-1. Download Volumes
-   ```sh
- downloader.py
-2. Extract Data  
-     ```sh
-   extractor.py
-3. keyword extractor
-      ```sh
-   keyword_extractor.py
-4. Index Data to Elasticsearch
-   ```sh
-   database.py
-5. Combining All Steps   
-   ```sh
-  main.py
+### Usage
+
+<details>
+  <summary>Download Volumes</summary>
+  <p>Run the following command to download volumes from the CEUR-WS website:</p>
+  
+  <pre><code>python downloader.py</code></pre>
+</details>
+
+<details>
+  <summary>Extract Data</summary>
+  <p>Run the following command to extract data from the downloaded PDF files:</p>
+  
+  <pre><code>python extractor.py</code></pre>
+</details>
+
+<details>
+  <summary>Index Data to Elasticsearch</summary>
+  <p>Make sure Elasticsearch is running, then run the following command to index data:</p>
+  
+  <pre><code>python database.py</code></pre>
+</details>
+
+<details>
+  <summary>Combining All Steps</summary>
+  <p>You can also run all steps sequentially using <code>main.py</code>:</p>
+  
+  <pre><code>python main.py</code></pre>
+</details>
